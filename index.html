@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Magshimim Bonus 11-6</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
+    </head>
+    <body>
+        <div id="conf">
+            <form id="conf-wrap">
+                <label for="pos">Number of array values</label>
+                <input type="number" id="num_values" min="2" placeholder="Min: 2" autocomplete="off">
+
+                <label for="val_to_search">Value to search</label>
+                <input type="number" id="val_to_search" id="val_to_search" placeholder="Must be less than or equal to field 1" min="1" autocomplete="off">
+                
+                <div id="run" class="disabled" title="Field one must be bigger than 0 and field 2 must be lower than field 1 value">
+                Start <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+                
+                <input type="submit" style="display: none" id="submit-conf" disabled/>
+            </form>
+        </div>
+
+        <div id="wrap">
+            <div id="objects">
+                <div class="flag" id="low">Low</div>
+                <div class="flag" id="mid">Mid</div>
+                <div class="flag" id="high">High</div>
+            </div>
+            
+            <div id="checker">
+                <!--<i class="fa fa-hand-pointer-o" aria-hidden="true"></i>-->
+                <div id="num_to_look"></div>
+            </div>
+        </div>
+
+        <div id="feedback">Value found at index <span></span></div>
+
+        <!-- <div id="codepen"><a href="https://codepen.io/yakovd33/">Codepen</a></div> -->
+        <!-- Toda Raba -->
+
+        <div id="replay"><i class="fa fa-repeat" aria-hidden="true"></i></div>
+        <div id="re_conf"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+
+        <img src="magshimim.png" class="animated" id="mag" alt="">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/08ae499e64.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
